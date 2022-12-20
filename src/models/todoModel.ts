@@ -5,13 +5,18 @@ export interface TodoDocument extends Document{
 }
 
 export interface Itodo{
-    todo:string
+    todo:string,
+    isDone:boolean
 }
 
 const todoSchema = new Schema<Itodo>({
     todo:{
         type:String,
         required:true
+    },
+    isDone:{
+        type:Boolean,
+        default:false
     }
 })
 

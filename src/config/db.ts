@@ -1,4 +1,4 @@
-import mongoose,{connect} from "mongoose";
+import {connect} from "mongoose";
 
 // "mongodb://localhost:27017/todo-typescript" => Local
 const connects=() =>{
